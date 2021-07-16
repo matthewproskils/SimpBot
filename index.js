@@ -3,6 +3,8 @@
 const { Client } = require('discord.js')
 require('dotenv').config()
 var fs = require('fs')
+require("http").createServer((_, res) => res.end("Alive!")).listen(8080)
+
 
 const client = new Client()
 
